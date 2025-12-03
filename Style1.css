@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --pbg: #ffffff;        /* Main background */
+    --sbg: #f8f9fa;      /* Cards, sections */
+    --tbg: #f1f3f5;
+  
+  --pcolor: #212529;
+  --scolor:#6c757d;
+  
+  --br: #e9ecef;      /* Subtle borders */
+    --br2: #dee2e6; 
+}
+
+.dark-theme {
+    --pbg: #121212;        /* Main background (near black) */
+    --sbg: #1e1e1e;
+    --tbg:#2d2d2d;
+  
+  --pcolor: #f8f9fa;      /* Main text (off-white) */
+    --scolor: #adb5bd;
+  
+  --br: #404040;      /* Subtle borders */
+    --br2: #495057; 
+}
+
+body{
+  background: var(--pbg);
+  color: var(--pcolor);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:50px;
+}
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width:100%;
+  height: 50px;
+  padding: 2px;
+  align-items: center;
+  background: var(--sbg);
+  color: var(--pcolor);
+}
+
+header h1{
+  font-size: 2.4rem;
+  padding: 3px;
+}
+
+header span{
+  display: flex;
+  width:100%;
+}
+
+header span button{
+  flex:1;
+  height: 25px;
+  font-size: 15px;
+  background: var(--tbg);
+  color:var(--pcolor);
+  border: 1px solid var(--br2);
+}
+
+a{
+  text-decoration: none;
+  color:var(--pcolor);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  border: 1px solid var(--br2);
+  background: var(--pbg);
+  color: var(--pcolor);
+  font-weight: 800;
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: 12px;
+}
+
+#Sinput{
+  border: 0;
+  background: green;
+  width: 45%;
+  height: 35px;
+  border-radius: 20px;
+  color:white;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  text-indent: 0;
+}
+
+form{
+  padding: 20px;
+  width:90%;
+  border: var(--pbr);
+  display: flex;
+  flex-direction: column;
+  gap:13px;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--tbg);
+  color: var(--scolor);
+  border:1px solid var(--br);
+}

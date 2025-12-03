@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+        <button onclick="CTheme()" id="Sfl">Change Theme</button>    
+        <h3>How are you?</h3>
+        <span id="Qbtn">
+            <button onclick="alert1()">I'm Fine</button>
+            <button onclick="alert2()">I'm not feeling well</button>
+        </span>
+    </header>
+
+    <main>
+        <p>
+            Hello, This website is made me, <strong>Axel Jhay Espiritu</strong> to show my knowlegde. Make sure you enjoy!!
+        </p>
+
+        <h3>I created some projects and feel free to check it on 👇</h3>
+        <table>
+            <tr>
+                <th>Project 1</th>
+                <th>Project 2</th>
+                <th>Project 3</th>
+            </tr>
+            <tr>
+                <td>Sign up</td>
+                <td>Game</td>
+                <td>Sample</td>
+            </tr>
+            <tr>
+                <td>Available</td>
+                <td>Not Available</td>
+                <td>Not Available</td>
+            </tr>
+            <tr id="Std">
+                <td><a href="Project1.html"><button onclick="alert3()">Go</button></a></td>
+                <td><a><button onclick="alert4()">Closed</button></a></td>
+                <td><a><button onclick="alert4()">Closed</button></a></td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Made with ❤️ by <strong>Axel Jhay Espiritu</strong>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
