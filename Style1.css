@@ -117,3 +117,7 @@ form{
   color: var(--scolor);
   border:1px solid var(--br);
 }
+
+form p{
+  color: orange;
+} 
