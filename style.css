@@ -142,6 +142,7 @@ header{
     justify-content: space-between;
     align-items: left;
     flex-shrink: no-shrink;
+    gap:15px;
     
 }
 
