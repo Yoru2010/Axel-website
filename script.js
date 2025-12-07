@@ -16,10 +16,23 @@ function alert4() {
 
 function CTheme() {
     document.body.classList.toggle("dark-theme");
+    
+    if (document.body.classList.contains("dark-theme")){
+        localStorage.setItem("theme", "dark");
+    }else{
+        localStorage.setItem("theme", "light");
+    }
 }
 
-localStorage.setItem("theme", "dark");
-
-if (localStorage.getItem("theme") === "dark") {
+let Stheme = localStorage.getItem("theme");
+if (Stheme === "dark"){
     document.body.classList.add("dark-theme");
+}
+
+function OButton(){
+        document.getElementById("Scontent").style.visibility = "visible";
+}
+
+function CButton(){
+        document.getElementById("Scontent").style.visibility = "hidden";
 }
