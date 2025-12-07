@@ -5,27 +5,29 @@
 }
 
 :root {
-    --pbg: #ffffff;        /* Main background */
-    --sbg: #f8f9fa;      /* Cards, sections */
-    --tbg: #f1f3f5;
-  
-  --pcolor: #212529;
-  --scolor:#6c757d;
-  
-  --br: #e9ecef;      /* Subtle borders */
-    --br2: #dee2e6; 
+--pbg: #ffffff;
+--sbg: #f8f9fa;
+--tbg: #f1f3f4;
+
+--pcolor: #202124;
+--scolor: #5f6368;
+
+--br: #d0d0d0;
+--br2: #c0c0c0;
+--br3: #b0b0b0;
 }
 
 .dark-theme {
-    --pbg: #121212;        /* Main background (near black) */
-    --sbg: #1e1e1e;
-    --tbg:#2d2d2d;
-  
-  --pcolor: #f8f9fa;      /* Main text (off-white) */
-    --scolor: #adb5bd;
-  
-  --br: #404040;      /* Subtle borders */
-    --br2: #495057; 
+--pbg: #0f0f0f;
+--sbg: #1a1a1a;
+--tbg: #2d2d2d;
+
+--pcolor: #e8eaed;
+--scolor: #9aa0a6;
+
+--br: #404040;
+--br2: #505050;
+--br3: #606060;
 }
 
 body{
@@ -55,12 +57,12 @@ header h1{
   padding: 3px;
 }
 
-header span{
+#Hbtns{
   display: flex;
   width:100%;
 }
 
-header span button{
+#Hbtns button{
   flex:1;
   height: 25px;
   font-size: 15px;
@@ -72,6 +74,51 @@ header span button{
 a{
   text-decoration: none;
   color:var(--pcolor);
+}
+
+#Scontent{
+  height: 200px;
+  width: 160px;
+  background: var(--sbg);
+  border: 2px solid var(--br2);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  gap:10px;
+  align-items: center;
+  padding: 1px;
+  visibility: hidden;
+}
+
+#Scontent button{
+  flex:none;
+  height: 20px;
+  width: 90%;
+}
+
+#SC1{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--br2);
+  width:60%;
+  bac
+}
+
+#Scontent div button{
+  width:30%;
+}
+
+#CButton button{
+  position: absolute;
+  top:-20px;
+  right:-1.5px;
+  border: 2px solid var(--br2);
+  background: red;
+  color: var(--pcolor);
+  font-weight: 900;
 }
 
 main{
@@ -119,5 +166,5 @@ form{
 }
 
 form p{
-  color: orange;
-} 
+  color:orange;
+}
