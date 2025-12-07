@@ -9,20 +9,27 @@
 <body>
     <header>
         <h1>Welcome to Project 1</h1>
-        <span>
-            <button><a href="index.html">back to home</a></button>
-        <button onclick="CTheme()">Change Theme</button>
-        </span>
+        <div id="Hbtns">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="OButton()">Settings</button>
+            <div id="Scontent">
+                <div id="SC1">
+                    <h3>Settings</h3>
+                </div>
+                <button onclick="CTheme()">Change Theme</button>
+                <div id="CButton"><button onclick="CButton()">Close</button></div>
+            </div>
+        </div>
     </header>
+    
     <main>
         <form>
             <input id="Ninput" type="name" placeholder="Type your name" required>
             <input id="Pinput" type="password" placeholder="Type your password" required>
             <input id="Einput" type="email" placeholder="Type your email" required>
             <input id="Sinput" type="submit">
-<p>Note, this form is not working!</p>
+            <p>Note, this form is not working!</p>
             <p>wait for further updates.</p>
-
         </form>
     </main>
     
