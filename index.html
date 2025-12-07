@@ -8,16 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my website</h1>
-        <button onclick="CTheme()" id="Sfl">Change Theme</button>    
+        <h1>Welcome to Home</h1>
+        <div id="Hbtns">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="OButton()">Settings</button>
+            <div id="Scontent">
+                <div id="SC1">
+                    <h3>Settings</h3>
+                </div>
+                <button onclick="CTheme()">Change Theme</button>
+                <div id="CButton"><button onclick="CButton()">Close</button></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="greet">
         <h3>How are you?</h3>
         <span id="Qbtn">
             <button onclick="alert1()">I'm Fine</button>
             <button onclick="alert2()">I'm not feeling well</button>
         </span>
-    </header>
-
-    <main>
+    </div>
+        <div id="sec1">
         <p>
             Hello, This website is made me, <strong>Axel Jhay Espiritu</strong> to show my knowlegde. Make sure you enjoy!!
         </p>
@@ -36,15 +49,16 @@
             </tr>
             <tr>
                 <td>Available</td>
-                <td>Not Available</td>
+                <td>Available</td>
                 <td>Not Available</td>
             </tr>
             <tr id="Std">
                 <td><a href="Project1.html"><button onclick="alert3()">Go</button></a></td>
-                <td><a><button onclick="alert4()">Closed</button></a></td>
+                <td><a href="Project2.html"><button onclick="alert3()">Go</button></a></td>
                 <td><a><button onclick="alert4()">Closed</button></a></td>
             </tr>
         </table>
+        </div>
     </main>
 
     <footer>
