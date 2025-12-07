@@ -14,3 +14,13 @@ const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
     document.body.classList.add("dark-theme");
 }
+
+function OButton(){
+        document.getElementById("Scontent").style.visibility = "visible";
+}
+
+function CButton(){
+        document.getElementById("Scontent").style.visibility = "hidden";
+}
+
+        
