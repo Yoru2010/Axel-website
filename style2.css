@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+:root {
+--pbg: #ffffff;
+--sbg: #f8f9fa;
+--tbg: #f1f3f4;
+
+--pcolor: #202124;
+--scolor: #5f6368;
+
+--br: #d0d0d0;
+--br2: #c0c0c0;
+--br3: #b0b0b0;
+}
+
+.dark-theme {
+--pbg: #0f0f0f;
+--sbg: #1a1a1a;
+--tbg: #2d2d2d;
+
+--pcolor: #e8eaed;
+--scolor: #9aa0a6;
+
+--br: #404040;
+--br2: #505050;
+--br3: #606060;
+}
+
+body {
+    background: var(--pbg);
+    color: var(--pcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width:100%;
+  height: 50px;
+  padding: 2px;
+  align-items: center;
+  background: var(--sbg);
+  color: var(--pcolor);
+  z-index: 10;
+  margin-bottom: 24px;
+}
+
+header h1{
+  font-size: 2.4rem;
+  padding: 3px;
+}
+
+#Hbtns{
+  display: flex;
+  width:100%;
+}
+
+#Hbtns button{
+  flex:1;
+  height: 25px;
+  font-size: 15px;
+  background: var(--tbg);
+  color:var(--pcolor);
+  border: 1px solid var(--br2);
+}
+
+a{
+  text-decoration: none;
+  color:var(--pcolor);
+}
+
+#Scontent{
+  height: 200px;
+  width: 160px;
+  background: var(--sbg);
+  border: 2px solid var(--br2);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  gap:10px;
+  align-items: center;
+  padding: 1px;
+  visibility: hidden;
+}
+
+#Scontent button{
+  flex:none;
+  height: 20px;
+  width: 90%;
+}
+
+#SC1{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--br2);
+  width:60%;
+}
+
+#Scontent div button{
+  width:30%;
+}
+
+#game{
+  background: var(--sbg);
+    border: 1.5px solid var(--br2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    gap: 20px;
+}
+
+#P1, #P2{
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  left:50%;
+  transform: translate(-50%);
+}
+
+#P1 div{
+  display: flex;
+  gap:10px;
+}
+
+#P1 div button{
+  width: 100px;
+  height:40px;
+}
+
+#CButton button{
+  position: absolute;
+  top:-20px;
+  right:-1.5px;
+  border: 2px solid var(--br2);
+  background: red;
+  color: var(--pcolor);
+  font-weight: 900;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border:2px solid var(--br);
+    width:95%;
+    padding: 12px 10px 15px 10px;
+    margin: -5px 0 10px 0;
+}
+
+
+#Pstats{
+  height: 200px;
+  width: 160px;
+  background: var(--sbg);
+  border: 2px solid var(--br2);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  gap:10px;
+  align-items: center;
+  padding: 1px;
+  visibility: hidden;
+}
+
+#Cstats button{
+  position: absolute;
+  top:-18px;
+  right:-1.5px;
+  border: 2px solid var(--br2);
+  background: red;
+  color: var(--pcolor);
+  font-weight: 900;
+}
+
+#btns{
+  background: var(--sbg);
+    border: 1.5px solid var(--br2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
+    gap: 20px;
+  height: 200px;
+}
+
+#Stat{
+  background: var(--tbg);
+  width: 80%;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  gap:10px;
+  padding: 5px;
+  border: 1px solid var(--br3);
+}
+
+#play, #history, #stats{
+  width: 80px;
+  height: 40px;
+}
+
+#Phistory{
+  height: 200px;
+  width: 160px;
+  background: var(--sbg);
+  border: 2px solid var(--br2);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  gap:10px;
+  align-items: center;
+  padding: 1px;
+  visibility: hidden;
+}
+
+#Phistory h{
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+#Chistory button{
+  position: absolute;
+  top:-18px;
+  right:-1.5px;
+  border: 2px solid var(--br2);
+  background: red;
+  color: var(--pcolor);
+  font-weight: 900;
+}
+
+#Hlist{
+  overflow: scroll;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  padding: 2px;
+}
+
+footer {
+    text-align: center;
+    color: var(--pcolor);
+}
