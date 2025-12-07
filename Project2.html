@@ -3,17 +3,70 @@
 <html>
 <head>
     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="Style1.css">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <input type="color">  
-    <p id="G">Good</p>
-    <button id="click">Click me</button>
+    <header>
+        <h1>Welcome to Project 2</h1>
+        <div id="Hbtns">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="OButton()">Settings</button>
+            <div id="Scontent">
+                <div id="SC1">
+                    <h3>Settings</h3>
+                </div>
+                <button onclick="CTheme()">Change Theme</button>
+                <div id="CButton"><button onclick="CButton()">Close</button></div>
+            </div>
+        </div>
+    </header>
     
-    
-    <script src="Practice .js"></script>
-    
-
+    <main>
+        <div id="game">
+            <div id="P1">
+                <h1>Choose</h1>
+                <div>
+                <button id="Rpick">Rock</button>
+        <button id="Ppick">Paper</button>
+        <button id="Spick">Scissor</button>
+                </div>
+            </div>
+            <div id="P2">
+                <p>You picked: <span id="picked">#</span></p>
+        <p>Computer picked: <span id="Cpicked">#</span></p>
+        <p>You've <span id="result">#</span></p>
+            </div>
+        </div>
+        
+        <div id="btns">
+             <p id="Stat">Wins:<span id="wins">0</span> Loses: <span id="lose">0</span></p>
+            <button onclick="Sgame()" id="play">Play</button>
+            <button id="history" onclick="Shistory()">History</button>
+            <div id="Phistory">
+                <h1>History</h1>
+                <div id="Chistory"><button onclick="Chistory()">Close</button></div>
+                <div id="Hlist"></div>
+            </div>
+            <button id="stats" onclick="Sstats()">Stats</button>
+            <div id="Pstats">
+                <h1>Stats</h1>
+                <div id="Cstats"><button onclick="Cstats()">Close</button></div
+                <p>Total time: <span id="timer">0</span></p>
+                <p>Wins: <span id="Stats_wins">0</span></p>
+                <p>Loses: <span id="Stats_lose">0</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Made with ❤️ by <strong>Axel Jhay Espiritu</strong>
+        </p>
+    </footer>
+        
+     <script src="script2.js"></script>
 </body>
 </html>
