@@ -100,7 +100,7 @@ footer {
 
 #Qbtn button {
     background: var(--tbg);
-    color: white;
+    color: var(--pcolor);
     width:auto;
     padding: 10px;
     height: auto;
